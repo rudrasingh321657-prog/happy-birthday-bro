@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sayan 💙</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+ margin:0;
+ color:white;
+ font-family:Georgia,serif;
+ background:
+ radial-gradient(circle at top,#522879,#170d38 55%,#08051b);
+ overflow-x:hidden;
+}
+
+#stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+.star{
+ position:absolute;color:#ffe5a0;
+ animation:twinkle 2s infinite alternate;
+}
+@keyframes twinkle{
+ to{opacity:.2;transform:scale(.6)}
+}
+
+header{
+ text-align:center;
+ padding:35px 12px 15px;
+ position:relative;
+ z-index:1;
+}
+
+.moon{
+ position:fixed;
+ right:18px;
+ top:12px;
+ font-size:38px;
+ color:#ffe4a0;
+ z-index:2;
+}
+
+h1{
+ font-size:clamp(38px,10vw,65px);
+ color:#ffe3a0;
+ text-shadow:0 0 25px #ffcf65;
+ margin:15px 0;
+}
+
+h2{color:#ffdf91}
+p{font:15px/1.8 Arial,sans-serif;color:#eee4ff}
+
+.small{
+ font:11px Arial;
+ letter-spacing:3px;
+ color:#ffdb88;
+}
+
+main{
+ max-width:850px;
+ margin:auto;
+ padding:12px;
+ position:relative;
+ z-index:1;
+}
+
+.page{
+ display:none;
+ min-height:75vh;
+ align-items:center;
+ justify-content:center;
+ flex-direction:column;
+ text-align:center;
+ animation:appear .6s;
+}
+
+.page.active{display:flex}
+
+@keyframes appear{
+ from{opacity:0;transform:translateY(15px)}
+ to{opacity:1;transform:none}
+}
+
+.card{
+ width:100%;
+ padding:25px 18px;
+ border:2px solid #ffdf91;
+ border-radius:24px;
+ background:linear-gradient(145deg,#28134dbb,#100b30ed);
+ box-shadow:0 0 22px #ffcf6570,0 15px 40px #0008;
+}
+
+button{
+ border:1px solid #fff0a5;
+ border-radius:30px;
+ padding:14px 25px;
+ margin:8px;
+ font-weight:bold;
+ font-size:15px;
+ color:#27123c;
+ background:linear-gradient(100deg,#ffdb55,#ff9fbd);
+ cursor:pointer;
+ box-shadow:0 0 14px #ffcf65;
+}
+
+button:active{transform:scale(.95)}
+
+.big{font-size:75px;margin:15px}
+.reason{font-size:22px;min-height:65px;color:#ffe9ae}
+
+input{
+ padding:12px;
+ width:90px;
+ border-radius:10px;
+ text-align:center;
+}
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:12px;
+ margin:20px 0;
+}
+
+/* SIX MEMORY PHOTOS FROM THE UPLOADED DESIGN */
+.memory{
+ min-height:150px;
+ position:relative;
+ border:2px solid #ffd978;
+ border-radius:16px;
+ overflow:hidden;
+ display:flex;
+ align-items:flex-end;
+ justify-content:center;
+ padding:8px;
+ background-image:
+ linear-gradient(to top,#160b30 3%,transparent 65%),
+ url('birthday-design.png');
+ background-repeat:no-repeat;
+ background-size:600% auto;
+ box-shadow:0 0 15px #ffcf5b70;
+}
+
+.memory b{
+ position:relative;
+ z-index:2;
+ color:#ffe49b;
+ font-size:13px;
+ text-shadow:0 2px 5px black;
+ background:#160b30b5;
+ padding:5px 8px;
+ border-radius:12px;
+}
+
+/* Crop the six memory panels */
+.photo1{background-position:0% 48%}
+.photo2{background-position:20% 48%}
+.photo3{background-position:40% 48%}
+.photo4{background-position:60% 48%}
+.photo5{background-position:80% 48%}
+.photo6{background-position:100% 48%}
+
+.balloon{
+ font-size:48px;
+ display:inline-block;
+ margin:8px;
+ cursor:pointer;
+ transition:.3s;
+}
+
+.balloon:active{transform:scale(.5)}
+
+.message{
+ min-height:55px;
+ padding:12px;
+ color:#ffe5a0;
+ border:1px solid #ffdb8b;
+ border-radius:14px;
+ margin:15px 0;
+}
+
+.letter{
+ background:#fff0ce;
+ color:#40264c;
+ border-radius:15px;
+ padding:20px;
+ text-align:left;
+ line-height:1.9;
+ white-space:pre-line;
+}
+
+.gift{
+ font-size:100px;
+ animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+ 50%{transform:translateY(-12px)}
+}
+
+.hidden{display:none}
+
+footer{
+ text-align:center;
+ padding:25px;
+ color:#ffdb9a;
+ position:relative;
+ z-index:1;
+}
+
+.confetti{
+ position:fixed;
+ top:-20px;
+ animation:fall 4s linear forwards;
+ pointer-events:none;
+ z-index:10;
+}
+
+@keyframes fall{
+ to{
+  transform:translateY(110vh) rotate(600deg);
+  opacity:0;
+ }
+}
+
+@media(max-width:520px){
+ header{padding-top:40px}
+ main{padding:9px}
+ .card{padding:20px 12px}
+ .grid{grid-template-columns:repeat(2,1fr);gap:9px}
+ .memory{min-height:135px}
+ .memory b{font-size:12px}
+ .balloon{font-size:40px;margin:5px}
+}
+</style>
+</head>
+
+<body>
+
+<div id="stars"></div>
+<div class="moon">☾</div>
+
+<header>
+ <div class="small">A SPECIAL SURPRISE FOR MY BROTHER</div>
+ <h1>SAYAN 💙</h1>
+ <p>Tonight is all about YOU!</p>
+ <p>Dream Big · Stay Happy · Brothers Forever ♾️</p>
+</header>
+
+<main>
+
+<!-- PAGE 1 -->
+<section class="page active" id="p0">
+ <div class="card">
+  <div class="big">🌙✨</div>
+  <h2>Hello Sayan!</h2>
+  <p>আজকের দিনটা তোর জন্য একটু Special। তাই তোর জন্য বানিয়েছি একটা ছোট্ট Surprise!</p>
+  <button onclick="go(1)">Open Surprise 💙</button>
+ </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="p1">
+ <div class="card">
+  <div class="small">STEP 01 · GUESSING GAME</div>
+  <h2>A Special Number 🔢</h2>
+  <p>১ থেকে ১০-এর মধ্যে একটা সংখ্যা Guess কর।</p>
+  <input id="guess" type="number" min="1" max="10">
+  <p id="guessMsg">তোর উত্তর কী?</p>
+  <button onclick="check()">Check ✓</button>
+ </div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="p2">
+ <div class="card">
+  <div class="small">STEP 02 · 12 REASONS</div>
+  <h2>12 Things About You 💙</h2>
+  <div class="reason" id="reason">তোর হাসিটা চারপাশ সুন্দর করে দেয়।</div>
+  <p id="count">1 / 12</p>
+  <button onclick="nextReason()">Next →</button>
+ </div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="p3">
+ <div class="card">
+  <div class="small">STEP 03 · BALLOON SURPRISE</div>
+  <h2>Pop The Balloons! 🎈</h2>
+  <p>প্রতিটা Balloon-এ লুকিয়ে আছে একটা Message!</p>
+  <div id="balloons"></div>
+  <div class="message" id="balloonMsg">একটা Balloon Pop কর!</div>
+  <p id="popped">0 / 6</p>
+  <button id="balloonNext" class="hidden" onclick="go(4)">
+   Next Surprise →
+  </button>
+ </div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page" id="p4">
+ <div class="card">
+  <div class="small">STEP 04 · OUR MEMORIES</div>
+  <h2>Memory Corner 📸</h2>
+  <p>আমাদের একসঙ্গে কাটানো মুহূর্তগুলোই আসল Treasure!</p>
+
+  <div class="grid">
+   <div class="memory photo1">
+    <b>Brotherhood</b>
+   </div>
+
+   <div class="memory photo2">
+    <b>Crazy Laughs</b>
+   </div>
+
+   <div class="memory photo3">
+    <b>Fun Times</b>
+   </div>
+
+   <div class="memory photo4">
+    <b>Good Memories</b>
+   </div>
+
+   <div class="memory photo5">
+    <b>Always There</b>
+   </div>
+
+   <div class="memory photo6">
+    <b>Forever Bond</b>
+   </div>
+  </div>
+
+  <button onclick="go(5)">Next Surprise →</button>
+ </div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page" id="p5">
+ <div class="card">
+  <div class="small">STEP 05 · MAKE A WISH</div>
+  <h2>Make a Wish Sayan! 🎂</h2>
+  <div class="big">🎂</div>
+  <div id="candles">🕯️ 🕯️ 🕯️</div>
+  <p id="wishMsg">একটা Wish কর, তারপর Candles নিভিয়ে দে!</p>
+  <button onclick="blow()">Blow Candles ✨</button>
+ </div>
+</section>
+
+<!-- PAGE 7 -->
+<section class="page" id="p6">
+ <div class="card">
+  <div class="big">🥳🎉</div>
+  <h1>YAYYYY!</h1>
+  <h2>HAPPY BIRTHDAY SAYAN!</h2>
+  <p>তোর জীবন আনন্দ, সাফল্য আর সুন্দর মুহূর্তে ভরে উঠুক!</p>
+  <button onclick="go(7)">One More Thing →</button>
+ </div>
+</section>
+
+<!-- PAGE 8 -->
+<section class="page" id="p7">
+ <div class="card">
+  <div class="small">A LETTER FOR MY BROTHER</div>
+  <h2>Dear Sayan 💌</h2>
+
+  <div class="letter">ভাই Sayan,
+
+জীবনে যতই ঝগড়া হোক, যতই খুনসুটি হোক, ভাইয়ের সঙ্গে ভাইয়ের Bond সবসময় Special।
+
+নিজের স্বপ্নের পেছনে ছুটে চলিস। নিজের ওপর বিশ্বাস রাখিস।
+
+জীবনে অনেক বড় হ, অনেক আনন্দে থাকিস।
+
+মনে রাখিস, তুই শুধু আমার ভাই নোস, তুই আমার জীবনের একটা Special অংশ।
+
+অনেক ভালোবাসা রইল ভাই। 💙
+
+— তোর নিজের ভাই, Nayan</div>
+
+  <button onclick="go(8)">One Last Thing 🎁</button>
+ </div>
+</section>
+
+<!-- PAGE 9 -->
+<section class="page" id="p8">
+ <div class="card">
+  <div class="small">FINAL SURPRISE</div>
+  <h2>One Last Gift For You!</h2>
+  <div class="gift" id="gift">🎁</div>
+  <p id="giftMsg">উপহারটা খুলে দেখ!</p>
+  <button onclick="reveal()">Open Gift 💝</button>
+
+  <h2 id="final" class="hidden">
+   HAPPY BIRTHDAY SAYAN! 💙
+   <br><br>
+   Brothers Forever ♾️
+  </h2>
+ </div>
+</section>
+
+</main>
+
+<footer>
+MADE WITH LOVE BY NAYAN 💙
+</footer>
+
+<script>
+
+// STARS
+for(let i=0;i<75;i++){
+ let s=document.createElement('span');
+ s.className='star';
+ s.textContent='✦';
+ s.style.left=Math.random()*100+'%';
+ s.style.top=Math.random()*100+'%';
+ s.style.fontSize=(8+Math.random()*13)+'px';
+ s.style.animationDelay=Math.random()*3+'s';
+ document.getElementById('stars').appendChild(s);
+}
+
+// PAGE NAVIGATION
+function go(n){
+ document.querySelectorAll('.page').forEach(p=>{
+  p.classList.remove('active');
+ });
+ document.getElementById('p'+n).classList.add('active');
+ window.scrollTo(0,0);
+
+ if(n===3)initBalloons();
+ if(n===6)celebrate();
+}
+
+// CONFETTI
+function celebrate(){
+ let symbols=['✨','💙','🎉','⭐','🎊'];
+
+ for(let i=0;i<40;i++){
+  let e=document.createElement('span');
+  e.className='confetti';
+  e.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  e.style.left=Math.random()*100+'vw';
+  e.style.animationDuration=(2+Math.random()*3)+'s';
+  document.body.appendChild(e);
+  setTimeout(()=>e.remove(),5000);
+ }
+}
+
+// NUMBER GAME
+function check(){
+ let v=Number(document.getElementById('guess').value);
+ let m=document.getElementById('guessMsg');
+
+ if(v===7){
+  m.textContent='Correct! Champion Sayan! 🎉';
+  celebrate();
+  setTimeout(()=>go(2),1000);
+ }else{
+  m.textContent=v<7?
+  'আর একটু বড় সংখ্যা!':
+  'আর একটু ছোট সংখ্যা!';
+ }
+}
+
+// 12 REASONS
+let reasons=[
+'তোর হাসিটা চারপাশ সুন্দর করে দেয়।',
+'তুই নিজের মতো—এটাই তোর পরিচয়।',
+'তোর সঙ্গে মজা করার মুহূর্তগুলো দারুণ।',
+'তোর মধ্যে অনেক সম্ভাবনা আছে।',
+'তুই নিজের স্বপ্ন দেখতে জানিস।',
+'তুই সবসময় নতুন কিছু শিখতে পারিস।',
+'তোর পাগলামিগুলোও মজার!',
+'তোর ভালো মনটা বজায় থাকুক।',
+'তুই জীবনে অনেক দূর এগিয়ে যাস।',
+'তোর সঙ্গে ছোট মুহূর্তও Memory হয়।',
+'তুই যেমন, ঠিক তেমনই থাকিস।',
+'কারণ তুই আমার নিজের ভাই! 💙'
+];
+
+let ri=0;
+
+function nextReason(){
+ ri++;
+
+ if(ri>=12){
+  go(3);
+  return;
+ }
+
+ document.getElementById('reason').textContent=reasons[ri];
+ document.getElementById('count').textContent=(ri+1)+' / 12';
+}
+
+// BALLOON MESSAGES
+let messages=[
+'তোর হাসিটা সবসময় এমনই থাকুক! 😊',
+'তোর সব স্বপ্ন সত্যি হোক! 🌟',
+'জীবনে অনেক সাফল্য আসুক! 🎉',
+'কঠিন সময়ে মনে রাখিস, তুই একা নোস! 💙',
+'সুস্থ থাকিস, ভালো থাকিস! 🤗',
+'অনেক ভালোবাসা রইল Sayan! 💙'
+];
+
+let popped=0;
+
+function initBalloons(){
+ if(document.getElementById('balloons').children.length)return;
+
+ for(let i=0;i<6;i++){
+  let b=document.createElement('span');
+  b.className='balloon';
+  b.textContent='🎈';
+
+  b.onclick=function(){
+   if(b.dataset.done)return;
+
+   b.dataset.done='yes';
+   b.textContent='💥';
+   popped++;
+
+   document.getElementById('balloonMsg').textContent=messages[i];
+   document.getElementById('popped').textContent=popped+' / 6';
+
+   celebrate();
+
+   if(popped===6){
+    document.getElementById('balloonNext').classList.remove('hidden');
+   }
+  };
+
+  document.getElementById('balloons').appendChild(b);
+ }
+}
+
+// BIRTHDAY CAKE
+function blow(){
+ document.getElementById('candles').textContent='✨';
+ document.getElementById('wishMsg').textContent='Wish sent to the Universe! 💙';
+
+ celebrate();
+ setTimeout(()=>go(6),1200);
+}
+
+// FINAL GIFT
+function reveal(){
+ document.getElementById('gift').textContent='💙';
+ document.getElementById('giftMsg').textContent='Surprise Unlocked!';
+ document.getElementById('final').classList.remove('hidden');
+ celebrate();
+}
+
+</script>
+
+</body>
+</html>
